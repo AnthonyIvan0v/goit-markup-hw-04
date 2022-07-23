@@ -5,7 +5,8 @@
 вторичный цвет текста #757575;
 основной цвет фона #E5E5E5;
 цвет фона нашей команды и фон кнопок в портфолио #F5F4FA;
-цвет фона героя и подвала #2F303A;
+цвет фона героя #C4C4C4;
+и подвала #2F303A;
 цвет акцента #2196F3
 цвет фона кнопки героя при hover #188CE8;
 
@@ -17,7 +18,8 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --background-color:#FFFFFF ;
-    --background-hero-footer-color:#2F303A;
+    --background-hero-color:#C4C4C4;
+    --background-footer-color:#2F303A;
     --background-hero-button-hover-color:#188CE8;
     --background-team-secondary-button-color: #F5F4FA;
     --primary-font: "Roboto", sans-serif;
@@ -164,7 +166,9 @@ button{
 
                                     /*====HERO====*/
 .hero{
-    background: var(--background-hero-footer-color) ;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+    background-color: var(--background-hero-color);
+    background-size: cover;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -299,7 +303,7 @@ background-color: var(--background-hero-button-hover-color);
                     /*==========/Наша команда==============*/
 /*footer*/
 .footer {
-    background: var(--background-hero-footer-color);
+    background: var(--background-footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
