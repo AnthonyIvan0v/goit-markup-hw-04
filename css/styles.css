@@ -9,6 +9,7 @@
 и подвала #2F303A;
 цвет акцента #2196F3
 цвет фона кнопки героя при hover #188CE8;
+цвет иконок социальных сетей #AFB1B8
 
 */
 :root {
@@ -22,6 +23,7 @@
     --background-footer-color:#2F303A;
     --background-hero-button-hover-color:#188CE8;
     --background-team-secondary-button-color: #F5F4FA;
+    --icons-color:#AFB1B8;
     --primary-font: "Roboto", sans-serif;
 }
 
@@ -58,6 +60,7 @@ button{
     border: none;
     border-radius:4px ;
 }
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -109,13 +112,14 @@ button{
     align-items: center;
     margin-left: auto;
 }
+
 .contacts-list-items:not(:last-child) {
     margin-right: 50px;
 }
+
         /*====LOGO====*/
 .logo {
     margin-right: 93px;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -148,31 +152,43 @@ button{
 
         /*====contacts====*/
 .contacts{
+    display: flex;
+    align-items: center;
     margin-left: auto;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    fill: var(--icons-color);
     
 }
 .contacts:hover,
 .contacts:focus{
      color: var(--accent-color);
+     fill: var(--accent-color);
 }
+.contacts-icon{
+    margin-right: 10px;
+}
+
+
         /*====/contacts====*/
                                 /*========/HEADER===========*/
 
                                     /*====HERO====*/
 .hero{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
     background-color: var(--background-hero-color);
-    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
 }
+
 
 .hero-title{
         font-weight: 900;
@@ -219,6 +235,15 @@ background-color: var(--background-hero-button-hover-color);
 
 .feature{
     display: flex;
+}
+.feature-icon{
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 .feature-item:not(:last-child) {
     margin-right:30px;
@@ -300,6 +325,58 @@ background-color: var(--background-hero-button-hover-color);
     line-height: 1.19;
     color:var(--primary-text-color);
 }
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.our-clients{
+    display: flex;
+    margin-top: 50px;
+
+}
+.our-clients-items:not(:last-child){
+    margin-right: 30px;
+}
+
+.our-clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    fill: var(--icons-color);
+}
+.our-clients-link:hover,
+.our-clients-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+}
+.social-list-items:not(:last-child){
+    margin-right: 10px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    fill: var(--icons-color);
+}
+.social-icons:hover,
+.social-icons:focus{
+    fill:var(--primary-white-color);
+    background: var(--accent-color);
+}
+
                     /*==========/Наша команда==============*/
 /*footer*/
 .footer {
@@ -307,12 +384,16 @@ background-color: var(--background-hero-button-hover-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-elements{
+    display: flex;
+    align-items: baseline;
+}
 .logo-accent-footer{
-        font-family: 'Raleway',sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color:var(--primary-white-color);
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--primary-white-color);
 }
 
 
@@ -343,6 +424,35 @@ background-color: var(--background-hero-button-hover-color);
 {
     color: var(--accent-color);
 }
+.our-social-links{
+    margin-left: 70px;  
+}
+.join{
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+.social-list-footer{
+    display: flex;
+    margin-top: 20px;
+}
+.social-icons-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    fill: var(--icons-color);
+    background: rgba(255, 255, 255, 0.1);
+    }
+    
+.social-icons-footer:hover,
+.social-icons-footer:focus {
+    fill: var(--primary-white-color);
+    background: var(--accent-color);
+}
 
 /*====Портфолио=====*/
 .section-work-examples{
@@ -372,11 +482,16 @@ background-color: var(--background-hero-button-hover-color);
 {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card-set{
  display: flex;
  flex-wrap: wrap;
  gap:30px;
+}
+
+.elements-card-set:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .description-project{
     padding-top: 20px;
