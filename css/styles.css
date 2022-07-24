@@ -160,8 +160,6 @@ button{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    fill: var(--icons-color);
-    
 }
 .contacts:hover,
 .contacts:focus{
@@ -170,6 +168,7 @@ button{
 }
 .contacts-icon{
     margin-right: 10px;
+    fil: currentColor;
 }
 
 
@@ -186,7 +185,9 @@ button{
     padding-bottom: 200px;  
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    max-width: 1600px;
+    height: 600px;
+    background-position: center;
 }
 
 
@@ -239,6 +240,7 @@ background-color: var(--background-hero-button-hover-color);
 .feature-icon{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -331,13 +333,13 @@ background-color: var(--background-hero-button-hover-color);
 }
 .our-clients{
     display: flex;
-    margin-top: 50px;
-
 }
 .our-clients-items:not(:last-child){
     margin-right: 30px;
 }
-
+.our-clients-icon{
+    fill: currentColor;
+}
 .our-clients-link{
     display: flex;
     justify-content: center;
@@ -346,12 +348,12 @@ background-color: var(--background-hero-button-hover-color);
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
-    fill: var(--icons-color);
+    color: var(--icons-color);
 }
 .our-clients-link:hover,
 .our-clients-link:focus {
     border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
+    color: var(--accent-color);
 }
 .social-list{
     display: flex;
@@ -362,6 +364,9 @@ background-color: var(--background-hero-button-hover-color);
 .social-list-items:not(:last-child){
     margin-right: 10px;
 }
+.social-icons-item{
+    fill: currentColor;
+}
 .social-icons{
     display: flex;
     align-items: center;
@@ -369,11 +374,11 @@ background-color: var(--background-hero-button-hover-color);
     width: 44px;
     height: 44px;
     border-radius: 50% 50%;
-    fill: var(--icons-color);
+    color: var(--icons-color);
 }
 .social-icons:hover,
 .social-icons:focus{
-    fill:var(--primary-white-color);
+    color:var(--primary-white-color);
     background: var(--accent-color);
 }
 
@@ -444,13 +449,12 @@ background-color: var(--background-hero-button-hover-color);
     width: 44px;
     height: 44px;
     border-radius: 50% 50%;
-    fill: var(--icons-color);
+    fill: var(--background-color);
     background: rgba(255, 255, 255, 0.1);
     }
     
 .social-icons-footer:hover,
 .social-icons-footer:focus {
-    fill: var(--primary-white-color);
     background: var(--accent-color);
 }
 
@@ -489,8 +493,11 @@ background-color: var(--background-hero-button-hover-color);
  flex-wrap: wrap;
  gap:30px;
 }
-
-.elements-card-set:hover{
+.link-elements-card-set{
+    display: block;
+}
+.link-elements-card-set:hover,
+.link-elements-card-set:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .description-project{
