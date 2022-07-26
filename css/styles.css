@@ -168,7 +168,7 @@ button{
 }
 .contacts-icon{
     margin-right: 10px;
-    fil: currentColor;
+    fill: currentColor;
 }
 
 
@@ -188,6 +188,7 @@ button{
     max-width: 1600px;
     height: 600px;
     background-position: center;
+    background-size: cover;
 }
 
 
